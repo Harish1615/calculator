@@ -8,10 +8,19 @@ First No: <input type="text" id="first" />
 Second No: <input type="text" id="second" />
 Result : <input type="text" id="result" />
 
-<button> Add </button>
+<button onclick="add()"> Add </button>
 <button> Subtract </button>
 <button> Multiply </button>
 <button> Division </button>
+<script>
+function add () {
 
+var firstno = document.getElementById("first").value
+var secondno = document.getElementById("second").value
+var result = parseInt(firstno) + parseInt(secondno)
+document.getElementById("result").value = result
+
+}
+</script>
 </body>
 </html>
